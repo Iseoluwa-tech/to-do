@@ -1,0 +1,219 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  margin: 0;
+  padding: 20px;
+background-image: url(istockphoto-1145063957-170667a.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+/* ...existing code... */
+.container {
+  max-width: 500px;
+  margin: 0;
+  background: linear-gradient(135deg, #e0e7ff 0%, #f4f6f8 100%);
+  padding: 28px 28px 22px 28px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12), 0 1.5px 4px rgba(0,0,0,0.08);
+  border: 1.5px solid #b3baff;
+  transition: box-shadow 0.3s;
+}
+
+.container:hover {
+  box-shadow: 0 12px 32px rgba(0,0,0,0.16), 0 2px 8px rgba(0,0,0,0.10);
+}
+
+.container h2 {
+  font-size: 1.7rem;
+  color: #3a3a7a;
+  margin-bottom: 18px;
+  letter-spacing: 1px;
+  text-align: center;
+  position: relative;
+}
+
+.container h2::after {
+  content: "";
+  display: block;
+  margin: 10px auto 0 auto;
+  width: 40px;
+  height: 3px;
+  background: #7c83fd;
+  border-radius: 2px;
+}
+
+#userForm label {
+  color: #3a3a7a;
+  font-weight: 600;
+  margin-top: 14px;
+}
+
+#userForm input {
+  width: 100%;
+  padding: 10px 12px;
+  margin: 7px 0 14px;
+  border: 1.5px solid #b3baff;
+  border-radius: 7px;
+  background: #f8faff;
+  font-size: 1rem;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+#userForm input:focus {
+  border: 1.5px solid #7c83fd;
+  outline: none;
+  box-shadow: 0 0 0 2px #e0e7ff;
+}
+
+#userForm button {
+  background: linear-gradient(90deg, #7c83fd 0%, #007bff 100%);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 7px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 2px 8px rgba(124,131,253,0.08);
+}
+
+#userForm button:hover {
+  background: linear-gradient(90deg, #5a60c3 0%, #0056b3 100%);
+  transform: translateY(-2px) scale(1.03);
+}
+
+.error {
+  color: #e74c3c;
+  font-size: 13px;
+  margin-bottom: 2px;
+}
+
+#formMessage {
+  font-weight: bold;
+  color: #2ecc71;
+  text-align: center;
+  margin-top: 12px;
+  font-size: 1.1rem;
+}
+/* ...existing code... */
+/* ...existing code... */
+.divider {
+  display: none; /* Hide by default */
+  max-width: 500px;
+  margin: 0;
+  background: linear-gradient(135deg, #e0e7ff 0%, #f4f6f8 100%);
+  padding: 28px 28px 22px 28px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12), 0 1.5px 4px rgba(0,0,0,0.08);
+  border: 1.5px solid #b3baff;
+  transition: box-shadow 0.3s;
+}
+
+.divider:hover {
+  box-shadow: 0 12px 32px rgba(0,0,0,0.16), 0 2px 8px rgba(0,0,0,0.10);
+}
+
+.divider h2 {
+  font-size: 1.7rem;
+  color: #3a3a7a;
+  margin-bottom: 18px;
+  letter-spacing: 1px;
+  text-align: center;
+  position: relative;
+}
+
+.divider h2::after {
+  content: "";
+  display: block;
+  margin: 10px auto 0 auto;
+  width: 40px;
+  height: 3px;
+  background: #7c83fd;
+  border-radius: 2px;
+}
+/* ...existing code... */
+
+.wrapper {
+  display: flex;
+  gap: 20px; /* Optional: space between container and divider */
+  justify-content: center; /* Optional: center them horizontally */
+  align-items: flex-start;  /* Optional: align to top */
+}
+.container, .divider {
+  margin: 0;
+  flex: 1; /* Optional: make them equal width */
+  max-width: 500px;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background: #007bff;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+#formMessage {
+  font-weight: bold;
+  color: green;
+}
+
+.todo-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+#todoList {
+  list-style: none;
+  padding: 0;
+}
+
+#todoList li {
+  background: #f9f9f9;
+  margin: 6px 0;
+  padding: 8px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-actions button {
+  margin-left: 5px;
+  padding: 4px 8px;
+  font-size: 12px;
+}
